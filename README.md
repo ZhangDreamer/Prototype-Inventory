@@ -22,7 +22,7 @@ To use Prototype Inventory, you will need to log in as either an admin or a staf
 
 **To login as an admin** use username _Admin_ and password _root_
 
-**To login as a staff** register a user by clicking on the register button on the top right of the project website and proceed to login. You can also login with an already existing user.
+**To login as a staff** register a user by clicking on the register button on the top right of the project website and proceed to login. You can also login with an already existing user. eg. username _Mike_ and password _inventory1_
 
 ## Key Features
 
