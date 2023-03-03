@@ -9,10 +9,10 @@
 <div class="container">
     <div class="row my-5">
         <div class="col-md-6">
-            <div class="bg-white">
-                <form method="GET" action="{% url 'dashboard-index' %}">
+            <div class="card-body bg-white">
+                <form method="GET" action="{% url 'dashboard-index' %}" style="padding-bottom: 10px;">
                     <div class="form-group">
-                      <label for="product-category">Product Category:</label>
+                      <label for="product-category" style="font-size: large;font-weight: bold;">Product Category:</label>
                       <select id="product-category" name="category" class="form-control">
                         <option value="">All</option>
                         {% for category in category_list %}
@@ -20,10 +20,10 @@
                         {% endfor %}
                       </select>
                     </div>
-                    <button type="submit" class="btn btn-primary">Filter</button>
+                    <button type="submit" class="btn btn-success shadow my-card">Filter</button>
                   </form>
                   
-                <canvas id="myChart1" width="400" height="300"></canvas>
+                <canvas id="myChart1" width="400" height="300" style="border-radius:0.25rem; box-shadow:0 .5rem 1rem rgba(0,0,0,.15)!important;"></canvas>
                 <script>
                     var ctx = document.getElementById('myChart1').getContext('2d');
                     var myChart1 = new Chart(ctx, {
@@ -72,10 +72,10 @@
             </div>
         </div>
         <div class="col-md-6">
-            <div class="bg-white">
-                <form method="GET" action="{% url 'dashboard-index' %}">
+            <div class="card-body bg-white">
+                <form method="GET" action="{% url 'dashboard-index' %}" style="padding-bottom: 10px;">
                     <div class="form-group">
-                      <label for="ordercategory">Staff Orders Category:</label>
+                      <label for="ordercategory" style="font-size: large;font-weight: bold;">Staff Orders Category:</label>
                       <select id="order-category" name="order" class="form-control">
                         <option value="">All</option>
                         {% for category in category_list %}
@@ -83,10 +83,10 @@
                         {% endfor %}
                       </select>
                     </div>
-                    <button type="submit" class="btn btn-primary">Filter</button>
+                    <button type="submit" class="btn btn-success shadow my-card">Filter</button>
                   </form>
                   
-                <canvas id="myChart" width="400" height="300"></canvas>
+                <canvas id="myChart" width="400" height="300" style="border-radius:0.25rem; box-shadow:0 .5rem 1rem rgba(0,0,0,.15)!important;"></canvas>
                 <script>
                     var ctx = document.getElementById('myChart').getContext('2d');
                     var myChart = new Chart(ctx, {
